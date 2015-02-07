@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApp"><!-- notice the change up here!!!! -->
+	<head>
+		<title>NG</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body ng-controller="MainController"><!-- here too!!!! -->
+
+		{{test}}
+
+		<!-- just a quick example
+		<h1>Hello World</h1>
+		<input type="text" placeholder="write here" ng-model="stuff">
+		<h1>{{stuff}}</h1>
+		-->
+
+		<div>
+			<form ng-submit="addUser()"><!-- allows us to submit form using enter button -->
+				<input type="text" required placeholder="name" ng-model="newUser.name"> <!-- required makes user add username to create new User -->
+				<input type="email" placeholder="email" ng-model="newUser.email">
+				<input type="password" placeholder="password" ng-model="newUser.password">
+				<button ng-click="addUser()">Submit User</button>
+				</form>
+		</div>
+
+		<div ng-repeat="user in users">
+			
+		</div>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+	</body>
+</html>
