@@ -1,0 +1,1 @@
+These files contain code that I learned and wrote down while first learning Angular
